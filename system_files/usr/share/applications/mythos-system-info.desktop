@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=MythOS System Info
+Comment=Show MythOS release and system information
+Exec=/usr/bin/mythos-info
+Terminal=true
+Icon=utilities-system-monitor
+Categories=System;
+Keywords=MythOS;System;Info;
