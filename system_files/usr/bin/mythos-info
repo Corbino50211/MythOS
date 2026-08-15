@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -u
+
+if [[ -r /etc/mythos-release ]]; then
+  # shellcheck disable=SC1091
+  source /etc/mythos-release
+else
+  NAME="MythOS"
+  VERSION="unknown"
+  CODENAME="unknown"
+  BASE="unknown"
+fi
+
+printf '%s\n' "MYTHOS // SYSTEM INFORMATION"
+printf '%s\n' "----------------------------"
+printf 'Release      %s %s\n' "$NAME" "$VERSION"
+printf 'Codename     %s\n' "$CODENAME"
+printf 'Base         %s\n' "$BASE"
+printf 'Kernel       %s\n' "$(uname -r)"
+printf 'Architecture %s\n' "$(uname -m)"
+printf '\n%s\n' "SYSTEM STATUS // NOMINAL"
