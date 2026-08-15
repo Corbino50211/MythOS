@@ -1,0 +1,6 @@
+NAME="MythOS"
+VERSION="0.1"
+VERSION_ID="0.1"
+CODENAME="genesis"
+BASE="Bazzite"
+PROJECT_URL="https://github.com/Corbino50211/MythOS"
